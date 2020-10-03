@@ -1,0 +1,10 @@
+version: '3'
+services:
+  angular-service:
+    build: .
+    ports: 
+      - "4200:4200"
+  # tests:
+  #   build: .
+  #   command: ["npm","run","test"]
+
