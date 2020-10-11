@@ -26,7 +26,7 @@
 
 FROM node:10-alpine
 COPY package.json package-lock.json ./
-RUN npm ci && mkdir /ng-app && mv ./node_modules ./ng-app
-WORKDIR /ng-app
+RUN npm install
+WORKDIR /app
 COPY . .
 CMD ["npm","run","start"]
